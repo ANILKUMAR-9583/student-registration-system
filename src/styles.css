@@ -95,7 +95,8 @@ li {
 }
 
 /* Responsive fix for narrow screens */
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 768px) {
   .form-row {
     flex-direction: column;
     align-items: stretch;
@@ -105,5 +106,16 @@ li {
   select,
   button {
     width: 100%;
+    min-width: unset;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
